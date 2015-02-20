@@ -47,7 +47,7 @@ if(isUserLoggedIn()) {
 <!DOCTYPE html>
 <html lang="en">
   <?php
-	echo renderTemplate("head.html", array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "UMES Tutor Registry"));
+	echo renderTemplate("head.html", array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "Home"));
   ?>
 
   <body>
@@ -59,7 +59,7 @@ if(isUserLoggedIn()) {
       </div>
       <div class="jumbotron">
         <h1>Welcome to the UMES tutor registry!</h1>
-        <p class="lead">Something we totally made from scratch all by outselves.</p>
+        <p class="lead">We totally made a thing from scratch all by ourselves.</p>
 		<div class="row">
 			<div class="col-sm-12">
 			  <a href="login.php" class="btn btn-success" role="button" value='Login'>Login</a>
