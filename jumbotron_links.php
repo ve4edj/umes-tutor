@@ -36,7 +36,7 @@ if ($can_register){
 	echo "
 		  <div class='row'>
 			  <div class='col-md-12'>
-				<a href='register.php' class='btn btn-link' role='button' value='Register'>Not a member yet?  Register here.</a>
+				<a href='register.php' class='btn btn-link' role='button' value='Register'>Not a member yet?<br/>Register here.</a>
 			  </div>
 		  </div>
 		  <div class='row'>
