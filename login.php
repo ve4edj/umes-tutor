@@ -61,11 +61,11 @@ if ($email_login == 1) {
       <div class="header">
         <ul class="nav nav-pills navbar pull-right">
         </ul>
-        <h3 class="text-muted">UserFrosting</h3>
+        <h3 class="text-muted"><img src="img/phil.png"/></h3>
       </div>
       <div class="jumbotron">
-        <h1>Welcome to UserFrosting!</h1>
-        <p class="lead">A secure, modern user management system based on UserCake, jQuery, and Bootstrap.</p>
+        <h1>Welcome to the UMES tutor registry!</h1>
+        <p class="lead">Something we totally made from scratch all by outselves.</p>
 		<small>Please sign in here:</small>
 		<form class='form-horizontal' role='form' name='login' action='api/process_login.php' method='post'>
 		  <div class="row">

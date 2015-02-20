@@ -322,13 +322,13 @@ textarea {
 }
 
 a {
-  color: #428bca;
+  color: #D52A25;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: #2a6496;
+  color: #E33225;
   text-decoration: underline;
 }
 
@@ -4080,7 +4080,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav > li > a:hover,
 .nav > li > a:focus {
   text-decoration: none;
-  background-color: #eeeeee;
+  background-color: #651009;
 }
 
 .nav > li.disabled > a {
@@ -4218,7 +4218,7 @@ textarea.input-group-sm > .input-group-btn > .btn {
 .nav-pills > li.active > a:hover,
 .nav-pills > li.active > a:focus {
   color: #ffffff;
-  background-color: #428bca;
+  background-color: #D52A25;
 }
 
 .nav-pills > li.active > a .caret,
@@ -5257,7 +5257,7 @@ a.list-group-item.active > .badge,
     padding-left: 60px;
   }
   .jumbotron h1 {
-    font-size: 63px;
+    font-size: 48px;
   }
 }
 

@@ -47,7 +47,7 @@ if(isUserLoggedIn()) {
 <!DOCTYPE html>
 <html lang="en">
   <?php
-	echo renderTemplate("head.html", array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "Welcome to UserFrosting"));
+	echo renderTemplate("head.html", array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "UMES Tutor Registry"));
   ?>
 
   <body>
@@ -55,11 +55,11 @@ if(isUserLoggedIn()) {
       <div class="header">
         <ul class="nav nav-pills navbar pull-right">
         </ul>
-        <h3 class="text-muted">UserFrosting</h3>
+        <h3 class="text-muted"><img src="img/phil.png"/></h3>
       </div>
       <div class="jumbotron">
-        <h1>Welcome to UserFrosting!</h1>
-        <p class="lead">A secure, modern user management system based on UserCake, jQuery, and Bootstrap.</p>
+        <h1>Welcome to the UMES tutor registry!</h1>
+        <p class="lead">Something we totally made from scratch all by outselves.</p>
 		<div class="row">
 			<div class="col-sm-12">
 			  <a href="login.php" class="btn btn-success" role="button" value='Login'>Login</a>
