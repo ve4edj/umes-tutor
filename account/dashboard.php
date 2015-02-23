@@ -21,7 +21,7 @@ $myCourses = Course::getAllByTutor($_SESSION["userCakeUser"]->user_id);
 <!DOCTYPE html>
 <html lang="en">
   <?php
-  	echo renderAccountPageHeader(array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "Dashboard"));
+  	echo renderAccountPageHeader(array("#SITE_ROOT#" => SITE_ROOT, "#SITE_TITLE#" => SITE_TITLE, "#PAGE_TITLE#" => "Tutor Dashboard"));
   ?>
 
   <body>
@@ -41,7 +41,7 @@ $myCourses = Course::getAllByTutor($_SESSION["userCakeUser"]->user_id);
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <h1>Dashboard <small>User Overview</small></h1>
+            <h1>Dashboard <small>Tutor Overview</small></h1>
             <ol class="breadcrumb">
               <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
             </ol>
@@ -49,10 +49,10 @@ $myCourses = Course::getAllByTutor($_SESSION["userCakeUser"]->user_id);
         </div><!-- /.row -->
 
         <div class="row">
-          <div class="col-lg-4">
+          <div class="col-lg-6">
             <div class="panel panel-primary">
               <div class="panel-heading">
-              <h3 class="panel-title"><i class="fa fa-clock-o"></i> My Courses</h3>
+              <h3 class="panel-title"><i class="fa fa-book"></i> My Courses</h3>
               </div>
               <div class="panel-body">
                 <div class="list-group">
@@ -63,9 +63,31 @@ $myCourses = Course::getAllByTutor($_SESSION["userCakeUser"]->user_id);
                   </a>
                   <?php } ?>
                 </div>
-                <!--<div class="text-right">
-                  <a href="#">View All Activity <i class="fa fa-arrow-circle-right"></i></a>
-                </div>-->
+                <button type="button" class="btn btn-block btn-md btn-success" value="Add"><i class="fa fa-plus"></i> Add</button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-info-circle"></i> Course Details</h3>
+              </div>
+              <div class="panel-body">
+                <!-- put the form thingy here-->
+                <button type="button" class="btn btn-block btn-md btn-warning" value="Save"><i class="fa fa-edit"></i> Save</button>
+                <button type="button" class="btn btn-block btn-md btn-danger" value="Delete"><i class="fa fa-trash-o"></i> Delete</button>
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-clock-o"></i> My Availability</h3>
+              </div>
+              <div class="panel-body">
+                <!-- put the form thingy here-->
               </div>
             </div>
           </div>
