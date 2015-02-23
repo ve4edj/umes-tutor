@@ -9,9 +9,9 @@ ToDo
  - course search (no log in => no names / emails)
  - better responsive widths
  - change Display Name to Full Name
- - add Edit / Remove buttons to dashboard
  - display rate on dashboard
- - only display My Courses section if the user is a tutor
+ - only display Tutor Dashboard if the user is a tutor
+ - Add Dashboard (regular user, search courses, contact tutor, view availability)
 
 Add to Registration / Tutor Profile
 ===================================
