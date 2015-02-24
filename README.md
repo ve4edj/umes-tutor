@@ -13,7 +13,7 @@ ToDo
  - Add Dashboard (regular user, search courses, contact tutor, view availability)
  - make Course Details / Availability Details a modal popup ('x' button in TR corner, Save / Cancel / Delete buttons [blue/yellow/red], disable delete when adding new)
  - system for approving tutor (Send email to 'Approvers' group with link, when link is clicked to approve, send notification to tutor with details)
-
+ - Typeahead on homepage -> 'tutors are available in these courses: start typing to search' (results are "courseNumber - numTutors")
 
 Add to Registration / Tutor Profile
 ===================================
