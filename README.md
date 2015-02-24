@@ -10,8 +10,10 @@ ToDo
  - better responsive widths
  - change Display Name to Full Name
  - display rate on dashboard
- - only display Tutor Dashboard if the user is a tutor
  - Add Dashboard (regular user, search courses, contact tutor, view availability)
+ - make Course Details / Availability Details a modal popup ('x' button in TR corner, Save / Cancel / Delete buttons [blue/yellow/red], disable delete when adding new)
+ - system for approving tutor (Send email to 'Approvers' group with link, when link is clicked to approve, send notification to tutor with details)
+
 
 Add to Registration / Tutor Profile
 ===================================
