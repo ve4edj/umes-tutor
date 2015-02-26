@@ -38,7 +38,7 @@ require_once("../models/class.tutor.course.php");
         </div>
         <div class="row">
           <div class="col-lg-12">
-            <h1>Dashboard <small>User Overview</small></h1>
+            <h1 style="margin-top:0px;">User Overview</h1>
             <ol class="breadcrumb">
               <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
             </ol>
@@ -46,6 +46,28 @@ require_once("../models/class.tutor.course.php");
         </div><!-- /.row -->
 
         <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-search"></i> Search Tutors</h3>
+              </div>
+              <div class="panel-body">
+                Coming Soon!!!
+                <!-- put the form thingy here-->
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-clock-o"></i> My Availability</h3>
+              </div>
+              <div class="panel-body">
+                Coming Soon!!!
+                <!-- put the form thingy here-->
+              </div>
+            </div>
+          </div>
         </div><!-- /.row -->
 
       </div><!-- /#page-wrapper -->

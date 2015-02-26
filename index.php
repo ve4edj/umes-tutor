@@ -83,6 +83,6 @@ if(isUserLoggedIn()) {
             $(".navbar .navitem-home").addClass('active');
         });
         // Load jumbotron links
-        $(".jumbotron-links").load("jumbotron_links.php");     
+        $(".jumbotron-links").load("jumbotron_links.php");
 	});
 </script>
