@@ -69,6 +69,19 @@ require_once("../models/class.tutor.course.php");
             </div>
           </div>
         </div><!-- /.row -->
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="panel panel-primary">
+              <div class="panel-heading">
+              <h3 class="panel-title"><i class="fa fa-graduation-cap"></i> Apply to Be a Tutor</h3>
+              </div>
+              <div class="panel-body">
+                Coming Soon!!!
+                <!-- put the form thingy here-->
+              </div>
+            </div>
+          </div>
+        </div><!-- /.row -->
 
       </div><!-- /#page-wrapper -->
 

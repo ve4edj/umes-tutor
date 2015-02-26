@@ -59,7 +59,7 @@ if(isUserLoggedIn()) {
       </div>
       <div class="jumbotron">
         <h1>Welcome to the UMES tutor registry!</h1>
-        <p class="lead">We totally made a thing from scratch all by ourselves.</p>
+        <p class="lead">Sign up now to find a tutor or to apply to be a tutor!</p>
 		<div class="row">
 			<div class="col-sm-12">
 			  <a href="login.php" class="btn btn-success" role="button" value='Login'>Login</a>
