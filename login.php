@@ -65,7 +65,7 @@ if ($email_login == 1) {
       </div>
       <div class="jumbotron">
         <h1>Welcome to the UMES tutor registry!</h1>
-        <p class="lead">We totally made a thing from scratch all by ourselves.</p>
+        <p class="lead">Sign up now to find a tutor or to apply to be a tutor!</p>
 		<small>Please sign in here:</small>
 		<form class='form-horizontal' role='form' name='login' action='api/process_login.php' method='post'>
 		  <div class="row">

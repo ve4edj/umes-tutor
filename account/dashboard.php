@@ -69,6 +69,8 @@ require_once("../models/class.tutor.course.php");
             </div>
           </div>
         </div><!-- /.row -->
+
+        <!-- only show this if the user isn't already a tutor! -->
         <div class="row">
           <div class="col-lg-6">
             <div class="panel panel-primary">
