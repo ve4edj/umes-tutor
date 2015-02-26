@@ -116,21 +116,21 @@ $myCourses = Course::getAllByTutor($_SESSION["userCakeUser"]->user_id);
       alertWidget('display-alerts');
 
       $('.course_link_add').click(function() {
-        alert("Let's link a new course!");
+        alert("Let's link a new course!" + "\nUser ID is: " + <?=$_SESSION["userCakeUser"]->user_id?>);
         // call the function to make a new edit form with no course ID
       });
 
       $('.course_link_edit').click(function() {
         var btn = $(this);
         var course_id = btn.data('course-id');
-        alert("Course ID to edit is: " + course_id);
+        alert("Course ID to edit is: " + course_id + "\nUser ID is: " + <?=$_SESSION["userCakeUser"]->user_id?>);
         // call the function to make a new edit form with the selected course ID
       });
 
       $('.course_link_delete').click(function() {
         var btn = $(this);
         var course_id = btn.data('course-id');
-        alert("Course ID to delete is: " + course_id);
+        alert("Course ID to delete is: " + course_id + "\nUser ID is: " + <?=$_SESSION["userCakeUser"]->user_id?>);
         // call the function to make a new delete confirm form with no course ID
       });
 		});
