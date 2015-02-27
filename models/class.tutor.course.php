@@ -6,11 +6,13 @@
 		public $id;
 		public $courseNumber;
 		public $faculty;
+		public $rate;
 
-		public function __construct($id, $courseNumber, $faculty) {
+		public function __construct($id, $courseNumber, $faculty, $rate = null) {
 			$this->id = $id;
 			$this->courseNumber = $courseNumber;
 			$this->faculty = $faculty;
+			$this->rate = $rate;
 		}
 
 		public function toString($faculties)
@@ -23,7 +25,13 @@
 		}
 
 		public static function getAllByTutor($tutor) {
-			return Course::getAllByQuery(sprintf("SELECT id,code,faculty_id FROM courses INNER JOIN tutor_courses ON courses.id = tutor_courses.course_id WHERE tutor_courses.tutor_id = %d", $tutor));
+			return Course::getAllByQuery(sprintf("SELECT id,code,faculty_id,rate FROM courses INNER JOIN tutor_courses ON courses.id = tutor_courses.course_id WHERE tutor_courses.tutor_id = %d", $tutor));
+		}
+
+		public static function getCourseByTutor($course, $tutor)
+		{
+			$result = Course::getAllByQuery(sprintf("SELECT id,code,faculty_id,rate FROM courses INNER JOIN tutor_courses ON courses.id = tutor_courses.course_id WHERE courses.id = %d AND tutor_courses.tutor_id = %d", $course, $tutor));
+			return !empty($result)?$result[$course]:null;
 		}
 
 		public static function getAllByQuery($query) {
@@ -33,7 +41,7 @@
 				$statement = $db->prepare($query);
 				if (!$statement->execute()) { return false; }
 				while($item = $statement->fetch(PDO::FETCH_ASSOC)) {
-					$content[$item["id"]] = new Course($item["id"],$item["code"],$item["faculty_id"]);
+					$content[$item["id"]] = new Course($item["id"],$item["code"],$item["faculty_id"],array_key_exists("rate",$item)?$item["rate"]:null);
 				}
 
 				$statement = null;
